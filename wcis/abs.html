@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang=en>
+
+<head>
+ <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+ <title>Abstracts</title>
+ <link rel="stylesheet" type="text/css" href="mystyles.css">
+</head>
+
+<body>
+<h1>Workshop on Cryptography and Information Security 2005</h1>
+<h2>Tokyo, Japan, October 21, 2005</h2>
+<br>
+
+<h3>Abstracts</h3>
+<br>
+
+<a name="brassard"></a>
+<p class=stp1>Gilles Brassard, University of Montreal</p>
+<p class=stp1bi>Quantum Cryptography: the Past, the Present and the Future</p>
+For ages, mathematicians have searched for a system that would allow two people
+to exchange messages with absolute confidentiality.  Around the middle of last
+century, Shannon proved that this dream is possible if and only if the
+legitimate participants share a random secret key as long as the message
+they wish to transmit.  But Shannon's theorem did not take account of the
+quantum world in which we live.  When information is appropriately encoded
+as quantum states, any attempt from an eavesdropper to access it yields
+partial information at best and entails a probability of spoiling it
+irreversibly.  This unavoidable disturbance can be detected by the
+legitimate users.  This phenomenon can be exploited to implement a
+cryptographic system that is unconditionally secure even against an
+eavesdropper with unlimited computing power and technology, with no need
+for a long shared secret key.  Sophisticated prototypes have been built
+round the world, over tens of kilometres of ordinary optical fibre as well
+as line-of-sight optical paths, and hundreds of kilometres are within reach.
+Satellite-based implementations are being contemplated.  Quantum cryptographic
+products have become commercially available in the past few years.
+<p>
+In this talk, I shall provide a personal historical perspective on quantum
+cryptography.  I shall also discuss the present and the future of the field.
+<p>
+No prior knowledge of cryptography quantum mechanics will be assumed.
+<p>
+<hr>
+<p align=center><a href="tech.html">Back to Program</a>&nbsp;&nbsp;&nbsp;<a href="index.html">Back to Main</a></p>
+<hr>
+<p>
+<a name="ostrovsky"></a>
+<p class=stp1>Rafail Ostrovsky, University of California, Los-Angeles</p>
+<p class=stp1bi>Private Searching On Streaming Data</p>
+In this talk, I will describe the problem of private searching on streaming
+data, where we can efficiently implement searching for documents under a
+secret criteria (such as presence or absence of a hidden combination of
+hidden keywords) under various cryptographic assumptions. The result can be
+viewed in a variety of ways: as a generalization of the notion of a Private
+Information Retrieval (to the more general queries and to a streaming
+environment as well as to public-key program obfuscation); as positive
+results on privacy-preserving data mining; and as a delegation of hidden
+program computation to other machines.
+<p>
+The talk will be self-contained and accessible for the general
+computer-science audience.  Joint work with William Skeith.
+<p>
+<hr>
+<p align=center><a href="tech.html">Back to Program</a>&nbsp;&nbsp;&nbsp;<a href="index.html">Back to Main</a></p>
+<hr>
+<p>
+<a name="dodis"></a>
+<p class=stp1>Yevgeniy Dodis, New York University</p>
+<p class=stp1bi>On Extractors, Error-Correction and Hiding All Partial Information</p>
+Randomness extractors allow one to obtain nearly perfect randomness
+from highly imperfect sources randomness, which are only known to
+contain "scattered" entropy. Not surprisingly, such extractors have
+found numerous applications in many areas of computer science
+including cryptography.  Aside from extracting randomness, a less
+known usage of extractors comes from the fact that they hide all
+deterministic functions of their (high-entropy) input: in other words,
+extractors provide certain level of privacy for the imperfect source
+that they use.  In the latter kind of applications, one typically
+needs extra properties of extractors, such as invertibility,
+collision-resistance or error-correction. 
+<p>
+In this abstract we survey some of such usages of extractors,
+concentrating on several recent results by the speaker. The primitives
+we will survey include several flavors of randomness extractors,
+entropically secure encryption and perfect one-way hash functions. The
+main technical tools will include several variants of the leftover
+hash lemma, error correcting codes, and the connection between
+randomness extraction and hiding all partial information.
+<p>
+The copy of the survey can be found at 
+http://theory.lcs.mit.edu/~yevgen/ps/ent-survey.ps
+<p>
+<hr>
+<p align=center><a href="tech.html">Back to Program</a>&nbsp;&nbsp;&nbsp;<a href="index.html">Back to Main</a></p>
+<hr>
+<p>
+<a name="fitzi"></a>
+<p class=stp1>Matthias Fitzi, University of Aarhus</p>
+<p class=stp1bi>Secure Cooperation without Mutual Trust</p>
+In classical cryptography, two (or more) parties want to
+protect openly communicated information against an external
+adversary. In contrast, there are many applications where
+the adversarial threat does not come from outside but from
+the involved parties themselves.
+<p>
+Consider the case where Aiko wants to buy some digital goods
+from Benjiro over the Internet. When both parties are honest
+then, naturally, Aiko will get the goods and Benjiro will
+get the money. However, in case Benjiro is dishonest, he
+might collect the money without sending the promised goods
+to Aiko. Conversely, in case Aiko is dishonest, she might
+take her goods but not deliver the money. Is there a way out
+of this problem?
+<p>
+Another example is playing Poker over the Internet. How to
+guarantee that none of the players can cheat? An obvious
+solution is to have a trusted central "game provider." But
+what if the provider himself is dishonest?
+<p>
+The given problems are instances of so-called "secure
+multi-party computation." This presentation gives a playful
+introduction into secure multi-party computation as well as
+into conceptual solutions to the problem.
+<p>
+<hr>
+<p align=center><a href="tech.html">Back to Program</a>&nbsp;&nbsp;&nbsp;<a href="index.html">Back to Main</a></p>
+<hr>
+<p>
+<a name="wullschleger"></a>
+<p class=stp1>J&uuml;rg Wullschleger, University of Montreal</p>
+<p class=stp1bi>Two-Party Computation and Quantum Nonlocality</p>
+Oblivious transfer, a central functionality in modern cryptography, allows a party to send two one-bit messages to another who can choose one of them to read, remaining ignorant about the other, whereas the sender does not learn the receiver's choice. Oblivious transfer the security of which is information-theoretic for both parties is known impossible to achieve from scratch. - The joint behavior of certain bi-partite quantum states is non-local, i.e., cannot be explained by shared classical information. In order to better understand such behavior, which is classically explainable only by communication, but does not allow for it, Popescu and Rohrlich have described a "non-locality machine": Two parties both input a bit, and both get a random output bit the XOR of which is the AND of the input bits. - We show a close connection, in a cryptographic sense, between OT and the "PR primitive." More specifically, unconditional OT can be achieved from a single realization of PR, and vice versa. Our reductions, which are single-copy, information-theoretic, and perfect, also lead to a simple and optimal protocol allowing for inverting the direction of OT.
+<p>
+
+
+<hr>
+<p align=center><a href="tech.html">Back to Program</a>&nbsp;&nbsp;&nbsp;<a href="index.html">Back to Main</a></p>
+
+<p>
+<hr>
+<p>
+<i>Last modified</i> Oct 14, 2005
+<p>
+Comments on this webpage should be addressed to <sub><img height=20 width=240 src=email.gif></sub>
+
+</body>
+</html>
